@@ -11,17 +11,20 @@ jQuery(document).ready(function($) {
 
 
 // Slider
-	$('.c_slider').slick({
-		slidesToShow: 2, slidesToScroll: 1, arrows: true, autoplay: true, autoplaySpeed: 8000,
+  $('.c_product-list').slick({
+    slidesToShow: 6, slidesToScroll: 1, arrows: true, autoplay: true, autoplaySpeed: 8000,
     responsive: [
       { breakpoint: 1000, settings: { slidesToShow: 1 } }
     ]
-	});
+  });
 
-// Action
-	$('.c_info-slider').slick({
-		slidesToShow: 1, slidesToScroll: 1, arrows: true, autoplay: true, autoplaySpeed: 8000
-	});
+  $('.c_why-gallery').slick({
+    slidesToShow: 3, slidesToScroll: 3, arrows: true, dots: true, autoplay: true, autoplaySpeed: 8000,
+    responsive: [
+      { breakpoint: 1000, settings: { slidesToShow: 1 } }
+    ]
+  });
+
 
 
 
